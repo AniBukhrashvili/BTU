@@ -7,13 +7,18 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.viewpager.adapter.ViewPagerFragmentAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class LoginActivity: AppCompatActivity() {
 
+    private lateinit var viewPagerFragmentAdapter: ViewPagerFragmentAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        viewPagerFragmentAdapter = ViewPagerFragmentAdapter(this)
 
         val actionBar: ActionBar? = supportActionBar
         actionBar?.hide()
@@ -26,7 +31,6 @@ class LoginActivity: AppCompatActivity() {
             setOf(
                 R.id.coursesFragment,
                 R.id.calendarFragment,
-                R.id.scheduleFragment,
                 R.id.profileFragment
             )
         )

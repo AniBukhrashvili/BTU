@@ -83,6 +83,7 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
     private fun saveInfo(){
 
         saveInfo.setOnClickListener(){
+            val photoLink = photoLink.text.toString()
             val name = name.text.toString()
             val id = id.text.toString()
             val mail = mail.text.toString()
@@ -90,7 +91,7 @@ class ProfileFragment: Fragment(R.layout.fragment_profile) {
             val address = address.text.toString()
             val education = education.text.toString()
             val work = work.text.toString()
-            val userInfo = com.example.btuclassroom.UserInfo(name, id, mail, number, address, education, work)
+            val userInfo = com.example.btuclassroom.UserInfo(name, photoLink, id, mail, number, address, education)
             db.child(auth.currentUser?.uid!!).setValue(userInfo)
         }
 

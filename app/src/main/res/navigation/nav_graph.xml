@@ -20,9 +20,4 @@
         android:name="com.example.btuclassroom.fragments.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/fragment_profile"/>
-    <fragment
-        android:id="@+id/scheduleFragment"
-        android:name="com.example.btuclassroom.fragments.ScheduleFragment"
-        android:label="ScheduleFragment"
-        tools:layout="@layout/fragment_schedule"/>
 </navigation>

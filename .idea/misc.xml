@@ -32,6 +32,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_forgot_password.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_calendar.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_courses.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/gradient.xml" value="0.24166666666666667" />

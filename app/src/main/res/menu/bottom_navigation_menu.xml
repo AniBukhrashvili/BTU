@@ -7,11 +7,6 @@
         android:title="კურსები" />
 
     <item
-        android:id="@+id/scheduleFragment"
-        android:icon="@drawable/ic_baseline_schedule_24"
-        android:title="ცხრილი"/>
-
-    <item
         android:id="@+id/calendarFragment"
         android:icon="@drawable/ic_baseline_calendar_today_24"
         android:title="კალენდარი" />
