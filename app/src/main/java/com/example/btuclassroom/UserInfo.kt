@@ -8,6 +8,5 @@ data class UserInfo (
     val address : String = "",
     val education : String = "",
     val work : String = "",
-
-
-    )
+    val photoLink: String = ""
+)

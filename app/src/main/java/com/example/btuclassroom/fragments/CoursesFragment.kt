@@ -15,6 +15,7 @@ class CoursesFragment: Fragment(R.layout.fragment_courses) {
     private lateinit var point: EditText
     private lateinit var credit: EditText
     private lateinit var button: Button
+    private lateinit var button2: Button
     private lateinit var textView: TextView
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,6 +37,12 @@ class CoursesFragment: Fragment(R.layout.fragment_courses) {
             sharedPreferences.edit().putString("", result).apply()
         }
 
+        button2.setOnClickListener {
+
+            textView.text = ""
+
+        }
+
 
     }
 
@@ -45,6 +52,7 @@ class CoursesFragment: Fragment(R.layout.fragment_courses) {
         point = requireView().findViewById(R.id.point)
         credit = requireView().findViewById(R.id.credit)
         button = requireView().findViewById(R.id.button)
+        button2 = requireView().findViewById(R.id.button2)
         textView = requireView().findViewById(R.id.textView2)
     }
 

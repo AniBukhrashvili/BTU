@@ -13,7 +13,6 @@ class RegistrationDialog(context: Context): Dialog(context) {
 
     private lateinit var textView: TextView
     private lateinit var editName: EditText
-    private lateinit var editId: EditText
     private lateinit var editPassword: EditText
     private lateinit var confirmPassword: EditText
     private lateinit var editEmail: EditText
@@ -31,15 +30,11 @@ class RegistrationDialog(context: Context): Dialog(context) {
         buttonRegister.setOnClickListener {
 
             val email = editEmail.text.toString()
-            val id = editId.text.toString()
             val password = editPassword.text.toString()
             val confirmPass = confirmPassword.text.toString()
 
             if (!email.contains("@btu.edu.ge")) {
                 editEmail.error = "შეიყვანეთ მეილი სწორად"
-            }
-            if(id.isEmpty() || (id.length != 12 ) || (!id.contains(Regex("[0-9]")))){
-                editId.error = "პირადი ნომერი არ რეგისტრირდება"
             }
             if ((password.length < 9) || !password.contains(Regex("[0-9]")) || !password.matches(".*[!@#$%^&*()_+].*".toRegex())) {
                 editPassword.error = "შეიყვანეთ შესაბამისი პაროლი"
@@ -61,7 +56,6 @@ class RegistrationDialog(context: Context): Dialog(context) {
     private fun init(){
         textView = findViewById(R.id.textView)
         editName = findViewById(R.id.editName)
-        editId = findViewById(R.id.editId)
         editPassword = findViewById(R.id.editPassword)
         confirmPassword = findViewById(R.id.confirmPassword)
         editEmail = findViewById(R.id.editEmail)

@@ -7,8 +7,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.viewpager.adapter.ViewPagerFragmentAdapter
+import androidx.viewpager2.widget.ViewPager2
+import com.example.btuclassroom.adapters.ViewPagerFragmentAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.tabs.TabLayout
 
 class LoginActivity: AppCompatActivity() {
 
